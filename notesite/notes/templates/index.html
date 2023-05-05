@@ -1,0 +1,66 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Note Sharing</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+       
+        <a href="{% url 'index' %}" class="logo">  LET'S LEARN</a>
+
+        <nav class="navbar">
+            <ul >
+                <li><a class="active" href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'signup' %}">User Signup</a></li>
+                <li><a href="{% url 'login' %}">User Login</a></li>
+                <!-- <li><a href="{% url 'login_admin' %}">Admin Login</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home"  ">
+        <img src="https://i.postimg.cc/MKdg1MRP/logo.jpg" alt="" srcset="" width="30%" class="text-center">
+        <h1 style="background-color : #c06142; color: white;">Welcome to Let's Learn</h1>
+        <div class="shape"></div>
+    </section>
+    <!-- home section ends -->
+
+
+   
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+    <!-- custom js file link  -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+
+</body>
+
+</html>
