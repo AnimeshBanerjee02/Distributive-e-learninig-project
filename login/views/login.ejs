@@ -1,0 +1,33 @@
+<div id="login">
+  <h3 class=" text-center text-dark pt-5 m-5">Login form</h3>
+  <div class="container card card-body bg-secondary">
+    <div id="login-row" class="row justify-content-center align-items-center">
+      <div id="login-column" class="col-md-6">
+        <div id="login-box" class="col-md-12">
+
+          <%- include('partials/messages'); %>
+            <form id="login-form" class="form" action="/users/login" method="POST">
+              <h3 class="text-center  text-white">Login</h3>
+              <div class="form-group">
+                <label for="email" class="text-dark">Email:</label><br />
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" />
+              </div>
+              <div class="form-group">
+                <label for="password" class="text-dark">Password:</label><br />
+                <input type="password" id="password" name="password" class="form-control"
+                  placeholder="Enter Password" />
+              </div>
+              <div class="form-group">
+                <input type="submit" name="submit" class="btn btn-danger btn-md" value="Login" />
+              </div>
+              <div id="register-link" class="text-right">
+                <p class="lead mt-4">
+                  Create a new Account? <a href="/users/register" class="text-light">Register</a>
+                </p>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
